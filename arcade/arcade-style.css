@@ -1,0 +1,179 @@
+/* Configuración Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0b0b1a; /* Azul muy oscuro */
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Estilo Neon */
+.neon-text, .title-neon {
+    color: #00f2ff;
+    text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.title-neon {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 10%;
+    background: rgba(11, 11, 26, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.logo span { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
+
+.nav-links { display: flex; list-style: none; }
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: #00f2ff; }
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1500') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.hero h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 1rem; font-family: 'Orbitron'; }
+
+.btn-main {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    border: 2px solid #ff00ff;
+    color: #ff00ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 2rem;
+    box-shadow: 0 0 15px #ff00ff;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #ff00ff;
+    color: #fff;
+}
+
+/* Sección Juegos */
+.section { padding: 80px 10%; }
+
+.arcade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 350px;
+}
+
+.game-card img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7); transition: 0.5s; }
+.game-card:hover img { transform: scale(1.1); filter: brightness(1); }
+
+.game-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Menu Comida */
+.dark-bg { background-color: #050510; }
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.food-item {
+    display: flex;
+    background: #16162d;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.food-item img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-right: 20px; border: 2px solid #00f2ff; }
+
+.food-desc h3 { color: #ff00ff; margin-bottom: 5px; }
+
+.price { color: #00f2ff; font-weight: bold; font-size: 1.2rem; }
+
+/* Reservación */
+.reservation-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #16162d;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.1);
+}
+
+.form-side { flex: 2; padding: 40px; }
+.info-side { flex: 1; padding: 40px; background: #00f2ff; color: #000; }
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #0b0b1a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-row { display: flex; gap: 10px; }
+
+footer { text-align: center; padding: 2rem; border-top: 1px solid #333; font-size: 0.8rem; opacity: 0.6; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .food-container { grid-template-columns: 1fr; }
+    .reservation-box { flex-direction: column; }
+}
