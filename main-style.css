@@ -67,6 +67,11 @@ body {
                 url('https://images.unsplash.com/photo-1517248135467-4c7ed9d868ef?q=80&w=600');
     background-size: cover;
 }
+.veterinaria {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), 
+                url('https://images.unsplash.com/photo-1517248135467-4c7ed9d868ef?q=80&w=600');
+    background-size: cover;
+}
 
 .arcade {
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), 
