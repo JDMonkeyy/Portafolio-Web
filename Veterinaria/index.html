@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Huellas & Amor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="contenedor nav-flex">
+            <div class="logo">
+                <i class="fa-solid fa-paw"></i>
+                <span>Huellas & Amor</span>
+            </div>
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <a href="#contacto" class="btn btn-nav">Agendar Cita</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="contenedor grid-dos">
+            <div class="hero-texto">
+                <span class="tagline">Cuidado profesional con el corazón</span>
+                <h1>El bienestar de tu mascota es nuestra <span class="resalto">prioridad</span></h1>
+                <p>Ofrecemos atención médica especializada, estética y todo lo necesario para que tu fiel compañero crezca sano, fuerte y feliz.</p>
+                <div class="hero-botones">
+                    <a href="#servicios" class="btn btn-primario">Ver Servicios</a>
+                    <a href="#contacto" class="btn btn-secundario">Saber Más</a>
+                </div>
+            </div>
+            <div class="hero-imagen">
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=600" alt="Médico veterinario atendiendo a un paciente">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h2>Nuestros Servicios Especializados</h2>
+                <p>Todo lo que tu mejor amigo necesita en un solo lugar bajo el cuidado de expertos comprometidos.</p>
+            </div>
+            
+            <div class="grid-cuatro">
+                <div class="tarjeta">
+                    <div class="icono-box"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3>Consulta General</h3>
+                    <p>Revisiones preventivas, diagnóstico oportuno y esquemas médicos personalizados.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="icono-box"><i class="fa-solid fa-syringe"></i></div>
+                    <h3>Vacunación</h3>
+                    <p>Planes integrales de inmunización y desparasitación para cachorros y adultos.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="icono-box"><i class="fa-solid fa-scissors"></i></div>
+                    <h3>Estética Integral</h3>
+                    <p>Baños medicinales, cortes de raza y arreglo estético libre de estrés para tu mascota.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="icono-box"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h3>Cirugías</h3>
+                    <p>Quirófano completamente equipado para esterilizaciones y cirugías de tejidos blandos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <div class="contenedor grid-dos">
+            <div class="nosotros-texto">
+                <h2>¿Por qué elegir nuestra clínica?</h2>
+                <p>Entendemos que tu mascota es parte fundamental de tu familia. Nos esmeramos en ofrecer instalaciones seguras, limpias y un trato sumamente humano para minimizar la ansiedad de tus compañeros.</p>
+                <ul class="lista-check">
+                    <li><i class="fa-solid fa-check"></i> Médicos veterinarios titulados y certificados.</li>
+                    <li><i class="fa-solid fa-check"></i> Equipamiento moderno y monitoreo constante.</li>
+                    <li><i class="fa-solid fa-check"></i> Atención de urgencias durante horarios de servicio.</li>
+                </ul>
+            </div>
+            <div class="nosotros-imagenes">
+                <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=400" alt="Perro feliz en revisión">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h2>Contacto y Citas</h2>
+                <p>Escríbenos o visítanos. Estaremos encantados de atenderte.</p>
+            </div>
+
+            <div class="contacto-wrapper">
+                <div class="contacto-info">
+                    <h3>Información de la Clínica</h3>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><strong>Dirección:</strong><br>Av. Principal #123, Colonia Centro, Piedras Negras, Coahuila.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><strong>Teléfono:</strong><br>+52 (878) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <p><strong>Horario:</strong><br>Lun - Sáb: 9:00 AM - 7:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contacto-formulario">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Solicitud enviada con éxito (Demostración del Prototipo)!');">
+                        <div class="form-group">
+                            <label>Nombre del Propietario</label>
+                            <input type="text" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre de la Mascota</label>
+                            <input type="text" required placeholder="Ej. Max">
+                        </div>
+                        <div class="form-group">
+                            <label>Teléfono Celular</label>
+                            <input type="tel" required placeholder="Ej. 8781234567">
+                        </div>
+                        <div class="form-group">
+                            <label>Motivo de Consulta / Mensaje</label>
+                            <textarea rows="4" placeholder="Cuéntanos brevemente qué necesita tu mascota..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primario btn-bloque">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor footer-flex">
+            <p>&copy; 2026 Veterinaria Huellas & Amor. Todos los derechos reservados.</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
